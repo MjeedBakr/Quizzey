@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="aa">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPage/StudentGradesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentGradesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPage/StudentProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPage/StudentQuizzesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentQuizzesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/Overview.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/Profile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentGrades.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentGrades.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentQuizzes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentQuizzes.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Home And Profile Pages done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +115,7 @@
       <workItem from="1706890044903" duration="3260000" />
       <workItem from="1706895024109" duration="7935000" />
       <workItem from="1706905945610" duration="1834000" />
-      <workItem from="1706933731532" duration="7770000" />
+      <workItem from="1706933731532" duration="8070000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -138,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706937657321</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Home And Profile Pages done">
+      <option name="closed" value="true" />
+      <created>1706941758412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706941758412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aa" />
-    <option name="LAST_COMMIT_MESSAGE" value="aa" />
+    <MESSAGE value="Home And Profile Pages done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Home And Profile Pages done" />
   </component>
 </project>

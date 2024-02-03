@@ -7,7 +7,6 @@ module quizzey.quizzey {
 
     exports quizzey.quizzey;
     opens quizzey.quizzey to javafx.fxml;
-    opens quizzey.quizzey.StudentPage to javafx.fxml;
 
     exports quizzey.quizzey.Users;
 

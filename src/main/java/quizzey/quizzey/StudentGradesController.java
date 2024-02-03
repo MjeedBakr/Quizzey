@@ -1,4 +1,4 @@
-package quizzey.quizzey.StudentPage;
+package quizzey.quizzey;
 
 public class StudentGradesController {
 }

@@ -21,7 +21,6 @@ public class LoginPageController {
     public Label loginMessage;
     public static Student loggedInStudent = new Student();
 
-    StudentPageController studentPageController = new StudentPageController();
     public static Admin loggedInAdmin = new Admin();
 
 
@@ -128,9 +127,8 @@ public class LoginPageController {
             Scene studentScene = new Scene(loader.load());
 
             // Get the controller from the loader
-            studentPageController = loader.getController();
+            StudentPageController studentPageController = loader.getController();
 
-            studentPageController.setLoggenInStudent(student);
 
             // Get the stage from the current scene
             Stage currentStage = (Stage) btnLogin.getScene().getWindow();

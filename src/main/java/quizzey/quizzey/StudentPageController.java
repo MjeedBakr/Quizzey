@@ -3,71 +3,61 @@ package quizzey.quizzey;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
-import javafx.scene.layout.VBox;
-import quizzey.quizzey.StudentPage.StudentProfileController;
+import javafx.scene.layout.AnchorPane;
 import quizzey.quizzey.Users.Student;
 
 import java.io.IOException;
 
-import static quizzey.quizzey.LoginPageController.loggedInStudent;
-
 public class StudentPageController {
 
+    @FXML
     public Button btnHome;
-    public Button btnQuiz;
+    @FXML
+    private Button btnQuiz;
+    @FXML
     public Button btnGrades;
+    @FXML
     public Button btnProfile;
 
+    @FXML
     public Button btnLogout;
     @FXML
-    private VBox contentVBox;
+    public AnchorPane contentVBox;
 
-    private Student loggenInStudent = new Student();
-    StudentProfileController studentProfileController = new StudentProfileController();
-
+    public Student loggedInStudent = LoginPageController.loggedInStudent;
 
 
-    public void setLoggenInStudent(Student loggenInStudent) {
-
-        this.loggenInStudent = loggenInStudent;
-    }
-
-    public void initialize() {
-
-        // Set default content
-        StudentPageController studentPageController = new StudentPageController();
-        loadAndSetContent("StudentPageStyles/Overview.fxml", studentPageController);
-
-
-
-
+     public void initialize() {
 
 
         // Handle button actions
-        btnHome.setOnAction(event -> loadAndSetContent("StudentPageStyles/Overview.fxml", studentPageController));
-        btnProfile.setOnAction(event -> initializeProfile(studentProfileController));
+        btnHome.setOnAction(event -> loadAndSetContent("StudentPageStyles/StudentPage.fxml"));
+        btnProfile.setOnAction(event -> loadAndSetContent("StudentPageStyles/Profile.fxml"));
         btnLogout.setOnAction(event -> logout());
     }
 
-    private void loadAndSetContent(String fxmlFileName, Object controller) {
+    public void loadAndSetContent(String fxmlFileName) {
         try {
             // Load the FXML file
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
-            VBox newContent = loader.load();
 
-            loader.setController(controller);
-            // Set the new content in the VBox
+            // Set the controller for the loaded FXML (if any)
+            Object controller = loader.getController();
+
+            AnchorPane newContent = loader.load();
+
+
+            // Set the new content in the Anchor Pane
             contentVBox.getChildren().setAll(newContent);
+
+
+
         } catch (IOException e) {
             e.printStackTrace(); // Handle the exception appropriately
         }
     }
 
-    private void initializeProfile(StudentProfileController controller) {
-        controller.initializeProfile(loggedInStudent);
-        loadAndSetContent("StudentPageStyles/Profile.fxml", controller);
-    }
-    private void logout() {
+    public void logout() {
         // Handle logout logic
     }
 

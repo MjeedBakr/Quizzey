@@ -22,6 +22,10 @@ public class Quiz {
         this.questions = questions;
     }
 
+    public Quiz() {
+
+    }
+
     // Getters and Setters
 
     public String getQuizID() {

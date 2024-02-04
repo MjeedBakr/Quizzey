@@ -12,14 +12,15 @@ public class Question {
     // Holds <choiceNumber, isCorrect>
     private HashMap<String, Boolean> choices;
 
-    private short questionAnsweringTime;
 
     // Constructor
-    public Question(String questionID, String theQuestion, HashMap<String, Boolean> choices, short questionAnsweringTime) {
-        this.questionID = questionID;
+    public Question(String theQuestion, HashMap<String, Boolean> choices) {
         this.theQuestion = theQuestion;
         this.choices = choices;
-        this.questionAnsweringTime = questionAnsweringTime;
+    }
+
+    public Question() {
+
     }
 
     // Getters and Setters
@@ -48,12 +49,5 @@ public class Question {
         this.choices = choices;
     }
 
-    public short getQuestionAnsweringTime() {
-        return questionAnsweringTime;
-    }
-
-    public void setQuestionAnsweringTime(short questionAnsweringTime) {
-        this.questionAnsweringTime = questionAnsweringTime;
-    }
 }
 

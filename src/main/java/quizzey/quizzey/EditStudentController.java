@@ -21,6 +21,11 @@ public class EditStudentController extends AdminPageController{
     public void initialize() throws IOException {
         super.initialize();
 
+        if (btnAddStudentToList != null)
+        {
+                    setStudents();
+        }
+
 
         firstNameCheckbox.setOnAction(event -> txtFieldStudentName.setEditable(firstNameCheckbox.isSelected()));
         lastNameCheckbox.setOnAction(event -> txtFieldStudentLastName.setEditable(lastNameCheckbox.isSelected()));
@@ -38,6 +43,16 @@ public class EditStudentController extends AdminPageController{
             txtMessage.setFill(Color.RED);
             return;
         }
+
+        boolean areSelected = (emailCheckbox.isSelected() && passwordChechBox.isSelected()
+        && firstNameCheckbox.isSelected() && lastNameCheckbox.isSelected());
+
+        if (areSelected) {
+            txtMessage.setText("You did not select any field to edit");
+            txtMessage.setFill(Color.RED);
+            return;
+        }
+
         Student getStudent = Student.getStudentByID(txtFieldStudentID.getText())  ;
 
         if (getStudent == null) {
@@ -49,24 +64,26 @@ public class EditStudentController extends AdminPageController{
         else {
 
             if (txtFieldStudentName.isEditable()) {
-                if (!txtFieldStudentName.getText().isEmpty()) {
-                    getStudent.setFirstName(txtFieldStudentName.getText());
-                }
-                else {
+                if (txtFieldStudentName.getText().isEmpty()) {
                     txtMessage.setText("The name can not be empty");
                     txtMessage.setFill(Color.RED);
                     return;
+
+                }
+                else {
+                    getStudent.setFirstName(txtFieldStudentName.getText());
                 }
             }
 
             if (txtFieldStudentLastName.isEditable()) {
-                if (!txtFieldStudentLastName.getText().isEmpty()) {
-                    getStudent.setLastName(txtFieldStudentLastName.getText());
-                }
-                else {
+                if (txtFieldStudentLastName.getText().isEmpty()) {
                     txtMessage.setText("The name can not be empty");
                     txtMessage.setFill(Color.RED);
                     return;
+
+                }
+                else {
+                    getStudent.setLastName(txtFieldStudentLastName.getText());
                 }
             }
 

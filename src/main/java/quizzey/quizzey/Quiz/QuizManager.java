@@ -6,6 +6,11 @@ public class QuizManager {
 
     public static ArrayList<Quiz> quizzesList = new ArrayList<>();
 
+    public static String generateQuizID() {
+        int quizID = quizzesList.size() + 1;
+        return "QUIZ"+quizID;
+    }
+
 
 
     public static void displayQuizzes() {

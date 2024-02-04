@@ -32,11 +32,13 @@ public class AdminPageController {
     public Text txtMessage;
 
     public void initialize() throws IOException {
-            setStudents();
+
             if (btnAddStudentToList != null)
             {
+                setStudents();
                 btnAddStudentToList.setOnAction(event -> {
                     try {
+
                         addStudentToList();
                     } catch (IOException e) {
                         throw new RuntimeException(e);
@@ -47,6 +49,7 @@ public class AdminPageController {
 
         btnAddStudent.setOnAction(event -> loadAndSetContent("AdminPageStyles/AdminPage.fxml"));
         btnEditStudent.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditStudent.fxml"));
+        btnAddQuiz.setOnAction(event -> loadAndSetContent("AdminPageStyles/AdminAddQuiz.fxml"));
         btnLogout.setOnAction(event -> logout());
     }
 
@@ -97,7 +100,7 @@ public class AdminPageController {
             studentCardController = fxmlLoader.getController();
             studentCardController.setData(stu);
 
-            // Use VBox.setMargin() to add spacing between cards
+            // Use HBox.setMargin() to add spacing between cards
             HBox.setMargin(cardBox, new Insets(10));
 
             cardContainer.getChildren().add(cardBox);

@@ -13,7 +13,7 @@ public class AppStart extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(AppStart.class.getResource("LoginPageStyles/LoginPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setResizable(false);
-        stage.setTitle("Hello!");
+        stage.setTitle("Quizzey!");
         stage.setScene(scene);
         stage.show();
     }

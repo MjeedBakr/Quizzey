@@ -27,12 +27,13 @@ public class StudentPageController {
     public Student loggedInStudent = LoginPageController.loggedInStudent;
 
 
-     public void initialize() {
+     public void initialize() throws IOException {
 
 
         // Handle button actions
         btnHome.setOnAction(event -> loadAndSetContent("StudentPageStyles/StudentPage.fxml"));
-        btnProfile.setOnAction(event -> loadAndSetContent("StudentPageStyles/Profile.fxml"));
+        btnQuiz.setOnAction(event -> loadAndSetContent("StudentPageStyles/StudentQuizzes.fxml"));
+        btnProfile.setOnAction(event -> loadAndSetContent("StudentPageStyles/StudentProfile.fxml"));
         btnLogout.setOnAction(event -> logout());
     }
 

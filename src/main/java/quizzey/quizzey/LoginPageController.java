@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import quizzey.quizzey.Quiz.QuizManager;
 import quizzey.quizzey.Users.Admin;
 import quizzey.quizzey.Users.Student;
 import quizzey.quizzey.Users.User;
@@ -26,9 +27,13 @@ public class LoginPageController {
 
     public void setRandomData() {
         Student stu1 = new Student("1", "Ali", "Ahmad", "Ali@Ali.com", "12345678", User.Role.STUDENT);
+        Student stu2 = new Student("2", "Mohammed", "Ahmad", "mohammed@Ali.com", "12345678", User.Role.STUDENT);
         Admin adm1 = new Admin("2", "Mohammed", "Admin", "Admin@Admin.com", "admin123", User.Role.ADMIN);
         Student.studentsList.add(stu1);
+        Student.studentsList.add(stu2);
         Admin.adminsList.add(adm1);
+
+        QuizManager.displayQuizzes();
     }
 
 
@@ -116,6 +121,28 @@ public class LoginPageController {
     }
 
     private void openAdminPage(Admin loggedInAdmin) {
+        try {
+            // Load the FXML file for the Admin page
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("AdminPageStyles/AdminPage.fxml"));
+
+            // Create a new scene
+            Scene adminScene = new Scene(loader.load());
+
+            // Get the controller from the loader
+            AdminPageController adminPageController = loader.getController();
+
+
+            // Get the stage from the current scene
+            Stage currentStage = (Stage) btnLogin.getScene().getWindow();
+
+            // Set the new scene on the stage
+            currentStage.setScene(adminScene);
+
+            // Show the stage
+            currentStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void openStudentPage(Student student) {

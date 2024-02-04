@@ -1,10 +1,18 @@
 package quizzey.quizzey.Users;
 
+import quizzey.quizzey.Quiz.Quiz;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
 public class Student extends User{
+
+    private ArrayList<Quiz> availableQuizzesList;
+    private HashMap<Quiz, Short> attemptedQuizzesList;
+
+
+
 
     public static ArrayList<Student> studentsList = new ArrayList<Student>();
 
@@ -21,6 +29,16 @@ public class Student extends User{
         for (Student stu: studentsList)
         {
             if (Objects.equals(stu.getPassword(), password) && Objects.equals(stu.getEmail(), email))
+                return stu;
+        }
+        return null;
+    }
+
+    public static Student getStudentByID(String ID)
+    {
+        for (Student stu: studentsList)
+        {
+            if (Objects.equals(stu.getPersonID(), ID))
                 return stu;
         }
         return null;

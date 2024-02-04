@@ -69,26 +69,36 @@
         </ImageView>
 
     </Pane>
-    <ScrollPane hbarPolicy="ALWAYS" layoutX="160.0" prefHeight="84.0" prefWidth="438.0" vbarPolicy="NEVER">
+    <ScrollPane hbarPolicy="ALWAYS" layoutX="160.0" prefHeight="84.0" prefWidth="438.0" stylesheets="@Style.css" vbarPolicy="NEVER">
         <HBox fx:id="cardContainer" minHeight="62.0" prefHeight="82.0" prefWidth="210.0" />
     </ScrollPane>
     <Text layoutX="222.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudentID" />
     <TextField fx:id="txtFieldStudentID" layoutX="349.0" layoutY="104.0" promptText="3" />
     <Text layoutX="222.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
-    <TextField fx:id="txtFieldStudentName" layoutX="349.0" layoutY="158.0" promptText="Faisal" editable="false" />
+    <TextField fx:id="txtFieldStudentName" editable="false" layoutX="349.0" layoutY="158.0" promptText="Faisal" />
     <Text layoutX="222.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
-    <TextField fx:id="txtFieldStudentEmail" layoutX="349.0" layoutY="239.0" promptText="stu@mail.com" editable="false"/>
-    <Text layoutX="223.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password"/>
-    <TextField fx:id="txtFieldStudentPassword" layoutX="349.0" layoutY="284.0" promptText="********" editable="false" />
-    <Button fx:id="btnEditStudentFromList" layoutX="424.0" layoutY="335.0" mnemonicParsing="false" text="Edit Student" />
+    <TextField fx:id="txtFieldStudentEmail" editable="false" layoutX="349.0" layoutY="239.0" promptText="stu@mail.com" />
+    <Text layoutX="223.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+    <TextField fx:id="txtFieldStudentPassword" editable="false" layoutX="349.0" layoutY="284.0" promptText="********" />
+    <Button fx:id="btnEditStudentFromList" layoutX="412.0" layoutY="346.0" mnemonicParsing="false" style="-fx-border-radius: 6; -fx-background-color: FFEEB6;" text="Edit Student" textFill="#916cf5">
+      <font>
+         <Font name="Comic Sans MS" size="16.0" />
+      </font></Button>
     <Text layoutX="222.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
-    <TextField fx:id="txtFieldStudentLastName" layoutX="349.0" layoutY="200.0" promptText="Bazmol" editable="false" />
-   <Button fx:id="btnDeleteStudent" layoutX="248.0" layoutY="335.0" mnemonicParsing="false" text="Delete Student" />
-   <Text fx:id="txtMessage" layoutX="368.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+    <TextField fx:id="txtFieldStudentLastName" editable="false" layoutX="349.0" layoutY="200.0" promptText="Bazmol" />
+   <Button fx:id="btnDeleteStudent" layoutX="226.0" layoutY="346.0" mnemonicParsing="false" style="-fx-border-radius: 6; -fx-background-color: FFEEB6;" text="Delete Student" textFill="#916cf5">
+      <font>
+         <Font name="Comic Sans MS" size="16.0" />
+      </font></Button>
    <CheckBox fx:id="firstNameCheckbox" layoutX="511.0" layoutY="162.0" mnemonicParsing="false" />
    <CheckBox fx:id="lastNameCheckbox" layoutX="511.0" layoutY="204.0" mnemonicParsing="false" />
    <CheckBox fx:id="emailCheckbox" layoutX="511.0" layoutY="242.0" mnemonicParsing="false" />
    <CheckBox fx:id="passwordChechBox" layoutX="511.0" layoutY="288.0" mnemonicParsing="false" />
+   <Text fx:id="txtMessage" layoutX="232.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
+      <font>
+         <Font name="Comic Sans MS" size="16.0" />
+      </font>
+   </Text>
 
 
 

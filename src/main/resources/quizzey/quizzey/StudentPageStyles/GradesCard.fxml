@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.GradesCardController">
+   <children>
+      <AnchorPane prefHeight="94.0" prefWidth="442.0" style="-fx-background-color: FFEEB6;">
+         <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="327.0">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <Text fx:id="txtQuizName" fill="#916cf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name" wrappingWidth="235.48838806152344">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </TextFlow>
+         <TextFlow layoutX="96.0" layoutY="55.0" prefHeight="34.0" prefWidth="74.0" textAlignment="CENTER">
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <Text fx:id="txtQuizGrade" fill="#916cf5" strokeType="OUTSIDE" strokeWidth="0.0" text="70%" wrappingWidth="48.5367431640625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </TextFlow>
+         <Text fill="#916cf5" layoutX="27.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade:">
+            <font>
+               <Font name="Comic Sans MS Bold" size="18.0" />
+            </font>
+         </Text>
+      </AnchorPane>
+   </children>
+</HBox>

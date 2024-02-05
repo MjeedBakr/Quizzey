@@ -9,7 +9,6 @@ module quizzey.quizzey {
     opens quizzey.quizzey to javafx.fxml;
 
     exports quizzey.quizzey.Users;
-exports quizzey.quizzey.Quiz;
-    exports quizzey.quizzey.QuizPlay;
+    exports quizzey.quizzey.Quiz;
 
 }

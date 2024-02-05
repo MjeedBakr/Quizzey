@@ -7,6 +7,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 

@@ -68,27 +68,32 @@
         </ImageView>
 
     </Pane>
-    <ScrollPane layoutX="160.0" layoutY="70.0" prefHeight="330.0" prefWidth="439.0">
+    <ScrollPane hbarPolicy="NEVER" layoutX="160.0" layoutY="70.0" prefHeight="330.0" prefWidth="439.0">
         <padding>
             <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
         </padding>
-        <VBox fx:id="cardContainer" prefHeight="322.0" prefWidth="430.0" spacing="10.0" />
+        <VBox fx:id="cardContainer" prefHeight="324.0" prefWidth="434.0" spacing="10.0" style="-fx-background-color: FFEEB6;" stylesheets="@style.css" />
     </ScrollPane>
-    <HBox alignment="CENTER_LEFT" layoutX="159.0" layoutY="5.0" prefHeight="60.0" prefWidth="440.0" spacing="10.0">
+    <HBox alignment="CENTER_LEFT" layoutX="159.0" layoutY="-5.0" prefHeight="76.0" prefWidth="439.0" spacing="10.0">
         <padding>
             <Insets left="10.0" />
         </padding>
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name">
+        <Text fill="#916cf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name">
            <font>
-               <Font size="18.0" />
+               <Font name="Comic Sans MS Bold" size="18.0" />
            </font>
         </Text>
-        <Text layoutX="200.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Entry Code">
+      <Line endX="-100.0" endY="70.878662109375" startX="-100.0" stroke="#916cf5" strokeWidth="3.0">
+         <HBox.margin>
+            <Insets left="132.0" />
+         </HBox.margin>
+      </Line>
+        <Text fill="#916cf5" layoutX="200.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Quiz Entry Code">
            <HBox.margin>
-               <Insets left="90.0" />
+               <Insets />
            </HBox.margin>
            <font>
-               <Font size="18.0" />
+               <Font name="Comic Sans MS" size="18.0" />
            </font>
         </Text>
     </HBox>

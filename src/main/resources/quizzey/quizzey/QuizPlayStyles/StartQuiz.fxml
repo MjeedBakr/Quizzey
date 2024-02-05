@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="700.0" style="-fx-background-color: #D8CCFB;" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.StartQuizController">
+    <Circle fx:id="c1" fill="#1f93ff00" layoutX="350.0" layoutY="250.0" radius="208.0" stroke="#916cf5"
+            strokeType="INSIDE" strokeWidth="15.0" style="-fx-stroke-dash-array: 50;"/>
+    <Circle fx:id="c2" fill="#1f93ff00" layoutX="350.0" layoutY="250.0" radius="156.0" stroke="#ffeeb8e8"
+            strokeType="INSIDE" strokeWidth="15.0" style="-fx-stroke-dash-array: 60;"/>
+    <Circle fx:id="c3" fill="#ffeeb88f" layoutX="350.0" layoutY="258.0" radius="90.0" stroke="#916cf5e8"
+            strokeType="INSIDE" strokeWidth="15.0" style="-fx-stroke-dash-array: 60;"/>
+    <Text fx:id="play" fill="#8264dc" layoutX="307.0" layoutY="277.0" strokeType="OUTSIDE"
+          strokeWidth="0.0" text="Play">
+        <font>
+          <Font size="48.0"/>
+        </font>
+    </Text>
+</AnchorPane>

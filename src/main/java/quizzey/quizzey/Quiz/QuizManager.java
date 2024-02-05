@@ -14,6 +14,14 @@ public class QuizManager {
         return null;
     }
 
+    public static Quiz getQuizByCode(String code) {
+        for(Quiz quiz: quizzesList)
+            if (quiz.getQuizEntryCode().equals(code))
+                return quiz;
+
+        return null;
+    }
+
     public static Question getQuestionByID(String ID, ArrayList<Question> questions) {
         for (Question question : questions)
             if (question.getQuestionID().equals(ID))

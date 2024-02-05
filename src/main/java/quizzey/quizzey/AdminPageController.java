@@ -2,6 +2,8 @@ package quizzey.quizzey;
 
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -11,8 +13,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
+import quizzey.quizzey.Users.Admin;
 import quizzey.quizzey.Users.Student;
 import quizzey.quizzey.Users.User;
 
@@ -34,6 +38,7 @@ public class AdminPageController {
     public TextField txtFieldStudentLastName;
     public Text txtMessage;
     public Button btnEditQuestion;
+    Admin loggenInAdmin = LoginPageController.loggedInAdmin;
 
     public void initialize() throws IOException {
 
@@ -91,7 +96,13 @@ public class AdminPageController {
         btnAddQuiz.setOnAction(event -> loadAndSetContent("AdminPageStyles/AdminAddQuiz.fxml"));
         btnEditQuiz.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditQuiz.fxml"));
         btnEditQuestion.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditQuestion.fxml"));
-        btnLogout.setOnAction(event -> logout());
+        btnLogout.setOnAction(event -> {
+            try {
+                logout();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
     public void loadAndSetContent(String fxmlFileName) {
@@ -115,8 +126,17 @@ public class AdminPageController {
         }
     }
 
-    public void logout() {
-        // Handle logout logic
+    public void logout() throws IOException {
+        // Reset the logged-in user
+        loggenInAdmin = null;
+
+        // Load the login page
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginPageStyles/LoginPage.fxml"));
+        Parent loginPageParent = loader.load();
+        Scene loginPageScene = new Scene(loginPageParent);
+        Stage stage = (Stage) btnLogout.getScene().getWindow();
+        stage.setScene(loginPageScene);
+        stage.show();
     }
 
     public void addStudentToList() throws IOException {
@@ -164,19 +184,25 @@ public class AdminPageController {
     }
 
     public boolean checkInput() {
+        String studentID = txtFieldStudentID.getText().trim(); // Trim to remove leading/trailing whitespace
 
-        if (Student.getStudentByID(txtFieldStudentID.getText()) != null) {
+        if (Student.getStudentByID(studentID) != null) {
             updateMessage("There is a student with this ID", Color.RED, txtMessage);
             return false;
         }
 
         if (isEmpty(txtFieldStudentID)) {
-            updateMessage("The ID can not be empty", Color.RED, txtMessage);
+            updateMessage("The ID cannot be empty", Color.RED, txtMessage);
+            return false;
+        }
+
+        if (!studentID.matches("[sS][tT]\\d{3}")) {
+            updateMessage("Invalid student ID format. It must start with 'ST' followed by 3 digits.", Color.RED, txtMessage);
             return false;
         }
 
         if (isEmpty(txtFieldStudentName) || isEmpty(txtFieldStudentLastName)) {
-            updateMessage("The name can not be empty", Color.RED, txtMessage);
+            updateMessage("The name cannot be empty", Color.RED, txtMessage);
             return false;
         }
 

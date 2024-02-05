@@ -2,11 +2,28 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.StudentCardController">
    <AnchorPane prefHeight="82.0" prefWidth="211.0" style="-fx-border-style: hidden solid none none; -fx-border-color: #916CF5; -fx-border-width: 2;">
-      <Text fx:id="txtStudentID" layoutX="3.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" />
-      <Text fx:id="txtStudentName" layoutX="1.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" wrappingWidth="76.412109375" />
+      <Text fx:id="txtStudentID" layoutX="51.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Text>
+      <Text fx:id="txtStudentName" layoutX="49.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" wrappingWidth="96.01210021972656">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Text>
+      <Text layoutX="4.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="76.412109375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="23.01211166381836">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
    </AnchorPane>
 </HBox>

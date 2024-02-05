@@ -59,9 +59,9 @@ public class EditQuizController extends AdminAddQuizController{
                     updateMessage("Quiz time must be between 10 and 60 seconds.", Color.RED, txtMessageEditQuiz);
                     return;
                 }
-            }
-            else {
-                getQuiz.setQuizTimer(Short.parseShort(txtFieldEditQuizTimer.getText()));
+                else {
+                    getQuiz.setQuizTimer(Short.parseShort(txtFieldEditQuizTimer.getText()));
+                }
             }
 
 
@@ -70,9 +70,9 @@ public class EditQuizController extends AdminAddQuizController{
                     updateMessage("The name can not be empty", Color.RED, txtMessageEditQuiz);
                     return;
                 }
-            }
-            else {
-                getQuiz.setQuizName(txtFieldEditQuizName.getText());
+                else {
+                    getQuiz.setQuizName(txtFieldEditQuizName.getText());
+                }
             }
 
 
@@ -90,9 +90,9 @@ public class EditQuizController extends AdminAddQuizController{
                     updateMessage("Number of questions must be between 1 and 10.", Color.RED, txtMessageEditQuiz);
                     return;
                 }
-            }
-            else {
-                getQuiz.setNumberOfQuestions(Short.parseShort(txtFieldEditNumberOfQuestions.getText()));
+                else {
+                    getQuiz.setNumberOfQuestions(Short.parseShort(txtFieldEditNumberOfQuestions.getText()));
+                }
             }
 
 

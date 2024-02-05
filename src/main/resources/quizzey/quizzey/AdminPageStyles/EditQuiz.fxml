@@ -24,80 +24,77 @@
                 <Font size="36.0" />
             </font>
         </Text>
-        <Text layoutX="52.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name:" />
-        <TextField fx:id="txtFieldEditQuizName" editable="false" layoutX="191.0" layoutY="131.0" promptText="Math" />
-        <Text layoutX="55.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Time:(Seconds)" />
-        <TextField fx:id="txtFieldEditQuizTimer" accessibleRole="INCREMENT_BUTTON" editable="false" layoutX="194.0" layoutY="170.0" promptText="50" />
-        <Text layoutX="52.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QuizID" />
-        <TextField fx:id="txtFieldQuizID" layoutX="191.0" layoutY="72.0" promptText="QUIZ6" />
-        <Text layoutX="52.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Questions" />
-        <TextField fx:id="txtFieldEditNumberOfQuestions" editable="false" layoutX="191.0" layoutY="212.0" promptText="5" />
-        <Text fx:id="txtMessageEditQuiz" layoutX="74.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Button fx:id="btnEditQuizInfo" layoutX="267.0" layoutY="277.0" mnemonicParsing="false" text="Edit Quiz" />
-      <Button fx:id="btnDeleteQuiz" layoutX="89.0" layoutY="277.0" mnemonicParsing="false" text="Delete Quiz" />
-      <CheckBox fx:id="checkboxEditQuizName" layoutX="349.0" layoutY="135.0" mnemonicParsing="false" />
-      <CheckBox fx:id="checkboxEditQuizNumberOfQuestion" layoutX="349.0" layoutY="216.0" mnemonicParsing="false" />
-      <CheckBox fx:id="checkboxEditQuizTime" layoutX="349.0" layoutY="174.0" mnemonicParsing="false" />
+        <Text layoutX="74.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name:" />
+        <TextField fx:id="txtFieldEditQuizName" editable="false" layoutX="191.0" layoutY="100.0" promptText="Math" />
+        <Text layoutX="28.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Time:(Seconds)" />
+        <TextField fx:id="txtFieldEditQuizTimer" accessibleRole="INCREMENT_BUTTON" editable="false" layoutX="191.0" layoutY="145.0" promptText="50" />
+        <Text layoutX="93.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz ID:" />
+        <TextField fx:id="txtFieldQuizID" layoutX="191.0" layoutY="60.0" promptText="QUIZ6" />
+        <Text layoutX="23.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Questions:" />
+        <TextField fx:id="txtFieldEditNumberOfQuestions" editable="false" layoutX="191.0" layoutY="191.0" promptText="5" />
+        <Text fx:id="txtMessageEditQuiz" layoutX="19.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="400.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Text>
+        <Button fx:id="btnEditQuizInfo" layoutX="266.0" layoutY="264.0" mnemonicParsing="false" text="Edit Quiz" />
+        <Button fx:id="btnDeleteQuiz" layoutX="74.0" layoutY="264.0" mnemonicParsing="false" text="Delete Quiz" />
+        <CheckBox fx:id="checkboxEditQuizName" layoutX="349.0" layoutY="104.0" mnemonicParsing="false" />
+        <CheckBox fx:id="checkboxEditQuizNumberOfQuestion" layoutX="349.0" layoutY="195.0" mnemonicParsing="false" />
+        <CheckBox fx:id="checkboxEditQuizTime" layoutX="349.0" layoutY="149.0" mnemonicParsing="false" />
     </AnchorPane>
-   <Pane prefHeight="400.0" prefWidth="160.0" style="-fx-background-color: #916CF5;">
-      <children>
-         <ImageView fitHeight="216.0" fitWidth="150.0" layoutX="5.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../LoginPageStyles/QuizzeyLogo.png" />
-            </image>
-         </ImageView>
-         <Line endX="148.58578491210938" endY="62.98579406738281" layoutX="10.0" layoutY="10.0" startX="-9.999991416931152" startY="65.19999694824219" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
-         <ImageView layoutX="26.0" layoutY="101.0" />
-         <ImageView layoutX="26.0" layoutY="155.0" />
-         <ImageView layoutX="26.0" layoutY="208.0" />
-         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="26.0" layoutY="261.0" />
-         <Line endX="160.0" endY="311.20001220703125" startX="-3.051757857974735E-6" startY="311.20001220703125" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
-         <Button fx:id="btnLogout" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="334.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Logout" textFill="#916cf5">
+    <Pane prefHeight="400.0" prefWidth="160.0" style="-fx-background-color: #916CF5;">
+        <ImageView fitHeight="216.0" fitWidth="150.0" layoutX="5.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../LoginPageStyles/QuizzeyLogo.png" />
+        </ImageView>
+        <Line endX="148.58578491210938" endY="62.98579406738281" layoutX="10.0" layoutY="10.0" startX="-9.999991416931152" startY="65.19999694824219" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
+        <ImageView layoutX="26.0" layoutY="101.0" />
+        <ImageView layoutX="26.0" layoutY="155.0" />
+        <ImageView layoutX="26.0" layoutY="208.0" />
+        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="26.0" layoutY="261.0" />
+        <Line endX="160.0" endY="311.20001220703125" startX="-3.051757857974735E-6" startY="311.20001220703125" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
+        <Button fx:id="btnLogout" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="334.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Logout" textFill="#916cf5">
             <font>
-               <Font size="16.0" />
+                <Font size="16.0" />
             </font>
             <padding>
-               <Insets left="10.0" />
+                <Insets left="10.0" />
             </padding>
-         </Button>
-         <ImageView layoutX="26.0" layoutY="341.0">
-            <image>
-               <Image url="@LogoutIcon.png" />
-            </image>
-         </ImageView>
-         <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="17.0" layoutY="91.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
+        </Button>
+        <ImageView layoutX="26.0" layoutY="341.0">
+            <Image url="@LogoutIcon.png" />
+        </ImageView>
+        <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="17.0" layoutY="91.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
             <font>
-               <Font size="14.0" />
+                <Font size="14.0" />
             </font>
-         </Button>
-         <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="136.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
+        </Button>
+        <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="136.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
             <font>
-               <Font size="14.0" />
+                <Font size="14.0" />
             </font>
-         </Button>
-         <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="180.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
+        </Button>
+        <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="180.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
             <font>
-               <Font size="14.0" />
+                <Font size="14.0" />
             </font>
-         </Button>
-         <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="222.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
+        </Button>
+        <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="17.0" layoutY="222.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
             <font>
-               <Font size="14.0" />
+                <Font size="14.0" />
             </font>
             <padding>
-               <Insets left="10.0" />
+                <Insets left="10.0" />
             </padding>
-         </Button>
-         <Button fx:id="btnEditQuestion" alignment="CENTER" focusTraversable="false" layoutX="16.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Question" textFill="#916cf5">
+        </Button>
+        <Button fx:id="btnEditQuestion" alignment="CENTER" focusTraversable="false" layoutX="16.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="33.0" prefWidth="126.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Question" textFill="#916cf5">
             <font>
-               <Font size="14.0" />
+                <Font size="14.0" />
             </font>
             <padding>
-               <Insets left="10.0" />
+                <Insets left="10.0" />
             </padding>
-         </Button>
-      </children>
-   </Pane>
+        </Button>
+    </Pane>
 
 
 

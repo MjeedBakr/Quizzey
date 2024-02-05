@@ -19,7 +19,7 @@ public class User {
     
         // Constructor 2 - Parameterized Constructor
         public User(String personID, String firstName, String lastName, String email, String password, Role personRole) {
-            this.personID = personID;
+            this.personID = personID.toUpperCase();
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
@@ -33,7 +33,7 @@ public class User {
         }
     
         public void setPersonID(String personID) {
-            this.personID = personID;
+            this.personID = personID.toUpperCase();
         }
     
         // Getter and Setter for firstName

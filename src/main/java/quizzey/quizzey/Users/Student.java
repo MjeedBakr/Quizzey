@@ -4,17 +4,13 @@ import quizzey.quizzey.Quiz.Quiz;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class Student extends User{
 
-    private ArrayList<Quiz> availableQuizzesList;
-
-    //<Quiz, Grade>
-    private HashMap<Quiz, Short> attemptedQuizzesList;
-
-
-
+    //<QuizID, numberOFTrueAnswers>
+    private HashMap<String, Double> attemptedQuizzesList = new HashMap<>();
 
     public static ArrayList<Student> studentsList = new ArrayList<Student>();
 
@@ -46,37 +42,41 @@ public class Student extends User{
         return null;
     }
 
-    private HashMap<String, Short> studentGrade;
-
     // Constructor 1 - Default Constructor
     public Student() {
-        this.studentGrade = new HashMap<>();
+        this.attemptedQuizzesList = new HashMap<>();
     }
 
     // Constructor 2 - Parameterized Constructor
-    public Student(String personID, String firstName, String lastName, String email, String password) {
+    public Student(String personID, String firstName, String lastName, String email, String password, HashMap<String, Double> attemptedQuizzesList) {
         super(personID, firstName, lastName, email, password, Role.STUDENT);
-        this.studentGrade = new HashMap<>();
+        this.attemptedQuizzesList = attemptedQuizzesList;
     }
 
     // Getter and Setter for studentGrade
-    public HashMap<String, Short> getStudentGrade() {
-        return studentGrade;
+    public HashMap<String, Double> getStudentGrade() {
+        return attemptedQuizzesList;
     }
 
-    public void setStudentGrade(HashMap<String, Short> studentGrade) {
-        this.studentGrade = studentGrade;
+    public void setStudentGrade(HashMap<String, Double> studentGrade) {
+        this.attemptedQuizzesList = studentGrade;
     }
 
     // Method to add a grade for a quiz
-    public void addGrade(String quizID, short grade) {
-        studentGrade.put(quizID, grade);
+    public void addGrade(String quizID, Double grade) {
+        this.attemptedQuizzesList.put(quizID, grade);
+
+    }
+
+
+    public static void addGradeForStudent(Student student, Double grade, String quizID) {
+        student.addGrade(quizID, grade);
     }
 
     // Method to get a grade for a quiz
-    public Short getGrade(String quizID) {
-        return studentGrade.get(quizID);
+    public Double getGrade(String quizID) {
+        return attemptedQuizzesList.get(quizID);
     }
 
-    
+
 }

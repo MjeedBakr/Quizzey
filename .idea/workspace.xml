@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Thursday 4:15 PM By Abdulmajeed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/GradesCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/PlayQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/ResultQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StartQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/QuizPlayStyles/StartQuiz.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/GradesCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuizController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/QuizPlayStyles/PlayQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/QuizPlayStyles/ResultQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultSceneController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizScene.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizSceneController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentAvailableQuizzesCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentAvailableQuizzesCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentGradesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentGradesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentQuizzesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/StudentQuizzesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" afterDir="false" />
@@ -16,7 +41,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/ShowQuestionsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/ShowQuestionsCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentGrades.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentGrades.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentProfile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentQuizzes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/StudentPageStyles/StudentQuizzes.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="FxmlFile" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
@@ -54,38 +85,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AppStart.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/FMB/Desktop/Quizzey/src/main/java/quizzey/quizzey",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmkd-/Desktop/EasyQuiz&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\FMB\Desktop\Quizzey\src\main\java\quizzey\quizzey" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\AdminPageStyles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\QuizPlayStyles" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\java\quizzey\quizzey\QuizPlay" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\StudentPageStyles" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\LoginPageStyles" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\LoginPage" />
-      <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="quizzey.quizzey" />
@@ -150,6 +180,15 @@
       <workItem from="1707104678834" duration="7702000" />
       <workItem from="1707114372660" duration="9905000" />
       <workItem from="1707127793972" duration="10928000" />
+      <workItem from="1707139091819" duration="93000" />
+      <workItem from="1707156553763" duration="25000" />
+      <workItem from="1707219232610" duration="5371000" />
+      <workItem from="1707226722768" duration="6260000" />
+      <workItem from="1707234088691" duration="3914000" />
+      <workItem from="1707244017499" duration="2043000" />
+      <workItem from="1707247834665" duration="5606000" />
+      <workItem from="1707276632445" duration="22465000" />
+      <workItem from="1707301093345" duration="8523000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -207,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707138967134</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Thursday 4:15 PM By Abdulmajeed">
+      <option name="closed" value="true" />
+      <created>1707139127834</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707139127834</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,25 +279,5 @@
     <MESSAGE value="5:00 PM" />
     <MESSAGE value="Thursday 4:15 PM By Abdulmajeed" />
     <option name="LAST_COMMIT_MESSAGE" value="Thursday 4:15 PM By Abdulmajeed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java</url>
-          <line>184</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java</url>
-          <line>215</line>
-          <properties class="quizzey.quizzey.LoginPageController" method="dbLogin">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

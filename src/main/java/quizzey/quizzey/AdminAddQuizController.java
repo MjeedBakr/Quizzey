@@ -11,6 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import quizzey.quizzey.Quiz.Question;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
@@ -109,6 +110,7 @@ public class AdminAddQuizController extends AdminPageController{
 
         // Create a new stage
         Stage stage = new Stage();
+        stage.initStyle(StageStyle.TRANSPARENT);
 
         for (int i = 0; i < quiz.getNumberOfQuestions(); i++) {
 
@@ -126,7 +128,9 @@ public class AdminAddQuizController extends AdminPageController{
 
 
                 stage.setTitle("Add Question Number " + (i + 1));
-                stage.setScene(new Scene(root));
+                Scene scene = new Scene(root);
+                scene.setFill(Color.TRANSPARENT);
+                stage.setScene(scene);
                 stage.showAndWait(); // Wait for the user to close the AddQuestionsCard stage
             } catch (IOException e) {
                 e.printStackTrace();
@@ -134,8 +138,8 @@ public class AdminAddQuizController extends AdminPageController{
         }
 
         quiz.setQuestions(questionsList);
-        questionsList.clear();
         QuizManager.quizzesList.add(quiz);
+        questionsList.clear();
         loadAndSetContent("AdminPageStyles/AdminAddQuiz.fxml");
 
     }
@@ -158,8 +162,8 @@ public class AdminAddQuizController extends AdminPageController{
         int quizTimer = Integer.parseInt(txtFieldQuizTimer.getText());
         int numberOfQuestions = Integer.parseInt(txtFieldNumberOfQuestions.getText());
 
-        if (quizTimer < 10 || quizTimer > 60) {
-            updateMessage("Quiz time must be between 10 and 60 seconds.", Color.RED, txtMessageAddQuiz);
+        if (quizTimer < 1 || quizTimer > 10) {
+            updateMessage("Quiz time must be between 1 and 10 minuts.", Color.RED, txtMessageAddQuiz);
             return false;
         }
 

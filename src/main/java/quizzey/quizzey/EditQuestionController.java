@@ -47,6 +47,8 @@ public class EditQuestionController extends AdminAddQuizController{
     }
 
     public void updateValue() {
+        Quiz selectedQuiz = QuizManager.getQuizByID(txtFldQuizID.getText().toUpperCase());
+        Question selectedQuestion = QuizManager.getQuestionByID(txtfldQuestionID.getText(), selectedQuiz.getQuestions());
         if (!checkInputEditQuestion())
             return;
 
@@ -61,32 +63,31 @@ public class EditQuestionController extends AdminAddQuizController{
                     break;
                 }
                 case Choice1 -> {
-                    updateAnswer(checkboxTrueAnswer.isSelected(), 0);
+                    updateAnswer(checkboxTrueAnswer.isSelected(), selectedQuestion.getAnswerText(selectedQuestion, 0));
                     break;
                 }
                 case Choice2 -> {
-                    updateAnswer(checkboxTrueAnswer.isSelected(), 1);
+                    updateAnswer(checkboxTrueAnswer.isSelected(), selectedQuestion.getAnswerText(selectedQuestion, 1));
                     break;
                 }
                 case Choice3 -> {
-                    updateAnswer(checkboxTrueAnswer.isSelected(), 2);
+                    updateAnswer(checkboxTrueAnswer.isSelected(), selectedQuestion.getAnswerText(selectedQuestion, 2));
                     break;
                 }
                 case Choice4 -> {
-                    updateAnswer(checkboxTrueAnswer.isSelected(), 3);
+                    updateAnswer(checkboxTrueAnswer.isSelected(), selectedQuestion.getAnswerText(selectedQuestion, 3));
                 }
             }
         }
 
     }
 
-    public void updateAnswer(boolean isCorrectAnswer, int indexToRemove) {
+    public void updateAnswer(boolean isCorrectAnswer, String choiceID) {
 
         Quiz selectedQuiz = QuizManager.getQuizByID(txtFldQuizID.getText().toUpperCase());
         Question selectedQuestion = QuizManager.getQuestionByID(txtfldQuestionID.getText(), selectedQuiz.getQuestions());
-        String oldChoice = selectedQuestion.getChoiceAtIndex(indexToRemove);
 
-        selectedQuestion.updateChoice(oldChoice, txtfldNewValue.getText(), isCorrectAnswer);
+        selectedQuestion.updateChoice(choiceID, txtfldNewValue.getText(), isCorrectAnswer);
 
         showAlert("Edit Question data successfully");
         showQuestions();
@@ -119,14 +120,14 @@ public class EditQuestionController extends AdminAddQuizController{
             return false;
         }
 
-        if (QuizManager.getQuizByID(txtFldQuizID.getText()) == null) {
+        if (QuizManager.getQuizByID(txtFldQuizID.getText().toUpperCase()) == null) {
             showAlert("Quiz ID Error", "The specified Quiz ID was not found.");
             return false;
         }
 
         Quiz selectedQuiz = QuizManager.getQuizByID(txtFldQuizID.getText().toUpperCase());
         assert selectedQuiz != null;
-        if (QuizManager.getQuestionByID(txtfldQuestionID.getText(), selectedQuiz.getQuestions()) == null) {
+        if (QuizManager.getQuestionByID(txtfldQuestionID.getText().toUpperCase(), selectedQuiz.getQuestions()) == null) {
             showAlert("QuestionID Error", "There is no Question with this ID");
             return false;
         }
@@ -156,6 +157,7 @@ public class EditQuestionController extends AdminAddQuizController{
             questionsStage.setTitle(selectedQuiz.getQuizName());
 
             questionsStage.show();
+            currentQuestionsStage = questionsStage;
         } else {
             showAlert("Quiz not found", "The specified Quiz ID was not found.");
         }

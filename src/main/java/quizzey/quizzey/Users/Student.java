@@ -9,6 +9,8 @@ import java.util.Objects;
 public class Student extends User{
 
     private ArrayList<Quiz> availableQuizzesList;
+
+    //<Quiz, Grade>
     private HashMap<Quiz, Short> attemptedQuizzesList;
 
 

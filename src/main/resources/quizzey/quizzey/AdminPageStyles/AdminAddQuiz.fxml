@@ -19,33 +19,33 @@
             <Image url="@../LoginPageStyles/QuizzeyLogo.png" />
         </ImageView>
         <Line endX="148.58578491210938" endY="62.98579406738281" layoutX="10.0" layoutY="10.0" startX="-9.999991416931152" startY="65.19999694824219" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
-        <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="20.0" layoutY="93.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
+        <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="20.0" layoutY="93.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="101.0">
 
         </ImageView>
-        <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="148.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
+        <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="142.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="155.0">
 
         </ImageView>
-        <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
+        <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="188.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="208.0">
 
         </ImageView>
-        <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="253.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
+        <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="230.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
             <padding>
                 <Insets left="10.0" />
@@ -57,7 +57,7 @@
         <Line endX="160.0" endY="311.20001220703125" startX="-3.051757857974735E-6" startY="311.20001220703125" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
         <Button fx:id="btnLogout" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="334.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Logout" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="16.0" />
             </font>
             <padding>
                 <Insets left="10.0" />
@@ -66,27 +66,35 @@
         <ImageView layoutX="26.0" layoutY="341.0">
             <Image url="@LogoutIcon.png" />
         </ImageView>
+        <Button fx:id="btnEditQuestion" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="269.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Question" textFill="#916cf5">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+        </Button>
 
     </Pane>
-    <ScrollPane layoutX="160.0" prefHeight="74.0" prefWidth="438.0" vbarPolicy="NEVER">
-        <HBox fx:id="quizCardContainer" minHeight="62.0" prefHeight="74.0" prefWidth="200.0" />
+    <ScrollPane cacheShape="false" centerShape="false" hbarPolicy="ALWAYS" layoutX="160.0" prefHeight="84.0" prefWidth="438.0" scaleShape="false" stylesheets="@Style.css" vbarPolicy="NEVER">
+        <HBox fx:id="quizCardContainer" cacheShape="false" centerShape="false" minHeight="62.0" prefHeight="82.0" prefWidth="210.0" scaleShape="false" />
     </ScrollPane>
-   <ScrollPane hbarPolicy="NEVER" layoutX="160.0" layoutY="84.0" prefHeight="316.0" prefWidth="438.0" />
     <AnchorPane layoutX="160.0" layoutY="84.0" prefHeight="316.0" prefWidth="438.0" style="-fx-background-color: D8CCFB;">
-        <Text layoutX="145.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Quiz">
+        <Text layoutX="145.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Quiz">
            <font>
                <Font size="36.0" />
            </font>
         </Text>
-        <Text layoutX="75.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name:" />
-        <TextField fx:id="txtFieldQuizName" layoutX="219.0" layoutY="77.0" promptText="Math" />
-        <Text layoutX="75.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Time:(Seconds)" />
-        <TextField fx:id="txtFieldQuizTimer" accessibleRole="INCREMENT_BUTTON" layoutX="219.0" layoutY="129.0" promptText="200" />
-        <Text layoutX="72.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enrty Code" />
-        <TextField fx:id="txtFieldEntryCode" layoutX="216.0" layoutY="182.0" promptText="AKD83M" />
-        <Text layoutX="72.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Questions" />
-        <TextField fx:id="txtFieldNumberOfQuestions" layoutX="216.0" layoutY="228.0" promptText="5" />
+        <Text layoutX="74.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Name:" />
+        <TextField fx:id="txtFieldQuizName" layoutX="218.0" layoutY="62.0" promptText="Math" />
+        <Text layoutX="74.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Time:(Seconds)" />
+        <TextField fx:id="txtFieldQuizTimer" accessibleRole="INCREMENT_BUTTON" layoutX="218.0" layoutY="114.0" promptText="50" />
+        <Text layoutX="71.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enrty Code" />
+        <TextField fx:id="txtFieldEntryCode" layoutX="215.0" layoutY="167.0" promptText="AKD83M" />
+        <Text layoutX="71.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Questions" />
+        <TextField fx:id="txtFieldNumberOfQuestions" layoutX="215.0" layoutY="213.0" promptText="5" />
         <Button fx:id="btnAddQuestions" layoutX="157.0" layoutY="276.0" mnemonicParsing="false" text="Add Questions" />
+      <Text fx:id="txtMessageAddQuiz" layoutX="74.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" />
     </AnchorPane>
 
 

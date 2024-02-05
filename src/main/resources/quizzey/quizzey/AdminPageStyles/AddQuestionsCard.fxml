@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="600.0" style="-fx-border-color: D8CCFB; -fx-border-width: 8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.AddQuestionsCardController">
    <padding>
       <Insets bottom="5.0" />
@@ -26,5 +25,6 @@
    <CheckBox fx:id="checkboxChoice2" layoutX="438.0" layoutY="149.0" mnemonicParsing="false" text="CorrectAnswer?" />
    <CheckBox fx:id="checkboxChoice3" layoutX="438.0" layoutY="189.0" mnemonicParsing="false" text="CorrectAnswer?" />
    <CheckBox fx:id="checkboxChoice4" layoutX="438.0" layoutY="234.0" mnemonicParsing="false" text="CorrectAnswer?" />
-   <Button fx:id="btnAddQuestion" layoutX="274.0" layoutY="261.0" mnemonicParsing="false" text="Add" />
+   <Button fx:id="btnAddQuestion" layoutX="281.0" layoutY="287.0" mnemonicParsing="false" text="Add" />
+   <CheckBox fx:id="checkboxConfirm" layoutX="438.0" layoutY="291.0" mnemonicParsing="false" text="Show Confirm?" />
 </AnchorPane>

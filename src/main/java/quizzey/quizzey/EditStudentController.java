@@ -16,13 +16,12 @@ public class EditStudentController extends AdminPageController{
     public CheckBox firstNameCheckbox;
     public CheckBox lastNameCheckbox;
     public CheckBox emailCheckbox;
-    public CheckBox passwordChechBox;
+    public CheckBox passwordCheckBox;
 
     public void initialize() throws IOException {
         super.initialize();
 
-        if (btnAddStudentToList != null)
-        {
+        if (btnAddStudentToList == null) {
                     setStudents();
         }
 
@@ -30,7 +29,7 @@ public class EditStudentController extends AdminPageController{
         firstNameCheckbox.setOnAction(event -> txtFieldStudentName.setEditable(firstNameCheckbox.isSelected()));
         lastNameCheckbox.setOnAction(event -> txtFieldStudentLastName.setEditable(lastNameCheckbox.isSelected()));
         emailCheckbox.setOnAction(event -> txtFieldStudentEmail.setEditable(emailCheckbox.isSelected()));
-        passwordChechBox.setOnAction(event -> txtFieldStudentPassword.setEditable(passwordChechBox.isSelected()));
+        passwordCheckBox.setOnAction(event -> txtFieldStudentPassword.setEditable(passwordCheckBox.isSelected()));
 
         btnEditStudentFromList.setOnAction(event -> editStudentInfo());
         btnDeleteStudent.setOnAction(event -> deleteStudent());
@@ -38,35 +37,31 @@ public class EditStudentController extends AdminPageController{
 
     public void editStudentInfo() {
 
-        if (txtFieldStudentID.getText().isEmpty()) {
-            txtMessage.setText("the id can not be empty");
-            txtMessage.setFill(Color.RED);
+        if (isEmpty(txtFieldStudentID)) {
+            updateMessage("the id can not be empty", Color.RED, txtMessage);
             return;
         }
 
-        boolean areSelected = (emailCheckbox.isSelected() && passwordChechBox.isSelected()
-        && firstNameCheckbox.isSelected() && lastNameCheckbox.isSelected());
+        boolean areSelected = (emailCheckbox.isSelected() || passwordCheckBox.isSelected()
+        || firstNameCheckbox.isSelected() || lastNameCheckbox.isSelected());
 
-        if (areSelected) {
-            txtMessage.setText("You did not select any field to edit");
-            txtMessage.setFill(Color.RED);
+        if (!areSelected) {
+            updateMessage("You did not select any field to edit", Color.RED, txtMessage);
             return;
         }
 
         Student getStudent = Student.getStudentByID(txtFieldStudentID.getText())  ;
 
         if (getStudent == null) {
-            txtMessage.setText("There is no student with this ID");
-            txtMessage.setFill(Color.RED);
+            updateMessage("There is no student with this ID", Color.RED, txtMessage);
             return;
         }
 
         else {
 
             if (txtFieldStudentName.isEditable()) {
-                if (txtFieldStudentName.getText().isEmpty()) {
-                    txtMessage.setText("The name can not be empty");
-                    txtMessage.setFill(Color.RED);
+                if (isEmpty(txtFieldStudentName)) {
+                    updateMessage("The name can not be empty", Color.RED, txtMessage);
                     return;
 
                 }
@@ -76,9 +71,8 @@ public class EditStudentController extends AdminPageController{
             }
 
             if (txtFieldStudentLastName.isEditable()) {
-                if (txtFieldStudentLastName.getText().isEmpty()) {
-                    txtMessage.setText("The name can not be empty");
-                    txtMessage.setFill(Color.RED);
+                if (isEmpty(txtFieldStudentLastName)) {
+                    updateMessage("The name can not be empty", Color.RED, txtMessage);
                     return;
 
                 }
@@ -88,14 +82,12 @@ public class EditStudentController extends AdminPageController{
             }
 
             if (txtFieldStudentEmail.isEditable()) {
-                if (txtFieldStudentEmail.getText().isEmpty()) {
-                    txtMessage.setText("The email can not be empty");
-                    txtMessage.setFill(Color.RED);
+                if (isEmpty(txtFieldStudentEmail)) {
+                    updateMessage("The email can not be empty", Color.RED, txtMessage);
                     return;
                 }
                 else if(!Student.isValidEmail(txtFieldStudentEmail.getText())){
-                    txtMessage.setText("Invalid Email");
-                    txtMessage.setFill(Color.RED);
+                    updateMessage("Invalid Email", Color.RED, txtMessage);
                     return;
                 }
                 else {
@@ -104,14 +96,12 @@ public class EditStudentController extends AdminPageController{
             }
 
             if (txtFieldStudentPassword.isEditable()) {
-                if (txtFieldStudentPassword.getText().isEmpty()) {
-                    txtMessage.setText("The password can not be empty");
-                    txtMessage.setFill(Color.RED);
+                if (isEmpty(txtFieldStudentPassword)) {
+                    updateMessage("The password can not be empty", Color.RED, txtMessage);
                     return;
                 }
                 else if(!Student.isValidPassword(txtFieldStudentPassword.getText())){
-                    txtMessage.setText("Invalid password");
-                    txtMessage.setFill(Color.RED);
+                    updateMessage("Invalid password", Color.RED, txtMessage);
                     return;
                 }
                 else {
@@ -122,9 +112,7 @@ public class EditStudentController extends AdminPageController{
 
 
 
-
-            txtMessage.setText("Edit Student Data Successfully");
-            txtMessage.setFill(Color.GREEN);
+            showAlert("Edit Student Data Successfully");
             loadAndSetContent("AdminPageStyles/EditStudent.fxml");
         }
 
@@ -132,23 +120,20 @@ public class EditStudentController extends AdminPageController{
 
     public void deleteStudent() {
 
-        if (txtFieldStudentID.getText().isEmpty()) {
-            txtMessage.setText("the id can not be empty");
-            txtMessage.setFill(Color.RED);
+        if (isEmpty(txtFieldStudentID)) {
+            updateMessage("the id can not be empty", Color.RED, txtMessage);
             return;
         }
         Student getStudent = Student.getStudentByID(txtFieldStudentID.getText())  ;
 
         if (getStudent == null) {
-            txtMessage.setText("There is no student with this ID");
-            txtMessage.setFill(Color.RED);
+            updateMessage("There is no student with this ID", Color.RED, txtMessage);
             return;
         }
         else {
             Student.studentsList.remove(getStudent);
 
-            txtMessage.setText("Delete Student Data Successfully");
-            txtMessage.setFill(Color.GREEN);
+            showAlert("Delete Student Data Successfully");
             loadAndSetContent("AdminPageStyles/EditStudent.fxml");
         }
 

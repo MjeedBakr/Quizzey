@@ -4,9 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Admin add and edit pages Designed">
+    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="5:00 PM">
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultSceneController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizSceneController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/ShowQuestionsCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuestion.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/ShowQuestionsCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AddQuestionsCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AddQuestionsCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditStudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -68,11 +97,11 @@
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\AdminPageStyles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\java\quizzey\quizzey\QuizPlay" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\StudentPageStyles" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\LoginPageStyles" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\LoginPage" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey" />
-      <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\java\quizzey\quizzey\LoginPage" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="quizzey.quizzey" />
@@ -101,8 +130,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -130,8 +158,14 @@
       <workItem from="1706956322322" duration="3423000" />
       <workItem from="1706980935971" duration="1816000" />
       <workItem from="1707017992745" duration="3630000" />
-      <workItem from="1707025383712" duration="10513000" />
-      <workItem from="1707056624305" duration="126000" />
+      <workItem from="1707025383712" duration="11581000" />
+      <workItem from="1707041693518" duration="11051000" />
+      <workItem from="1707053845440" duration="977000" />
+      <workItem from="1707055131134" duration="44000" />
+      <workItem from="1707059340456" duration="603000" />
+      <workItem from="1707104678834" duration="7702000" />
+      <workItem from="1707114372660" duration="9905000" />
+      <workItem from="1707127793972" duration="10622000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -157,23 +191,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706941879991</updated>
     </task>
-    <task id="LOCAL-00004" summary="Admin add and edit pages Designed">
+    <task id="LOCAL-00004" summary="Start Working on Admin Pages">
       <option name="closed" value="true" />
-      <created>1707056222156</created>
+      <created>1707036137215</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1707056222156</updated>
+      <updated>1707036137215</updated>
     </task>
-    <task id="LOCAL-00005" summary="Admin add and edit pages Designed">
+    <task id="LOCAL-00005" summary="Start Working on Admin Pages">
       <option name="closed" value="true" />
-      <created>1707056312065</created>
+      <created>1707036176852</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1707056312065</updated>
+      <updated>1707036176852</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5:00 PM">
+      <option name="closed" value="true" />
+      <created>1707055162720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707055162720</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +236,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="aa" />
     <MESSAGE value="Home And Profile Pages done" />
-    <MESSAGE value="Admin add and edit pages Designed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin add and edit pages Designed" />
+    <MESSAGE value="Start Working on Admin Pages" />
+    <MESSAGE value="5:00 PM" />
+    <option name="LAST_COMMIT_MESSAGE" value="5:00 PM" />
   </component>
 </project>

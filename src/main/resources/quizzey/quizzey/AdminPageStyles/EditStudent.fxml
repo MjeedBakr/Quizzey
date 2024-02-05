@@ -20,33 +20,33 @@
             <Image url="@../LoginPageStyles/QuizzeyLogo.png" />
         </ImageView>
         <Line endX="148.58578491210938" endY="62.98579406738281" layoutX="10.0" layoutY="10.0" startX="-9.999991416931152" startY="65.19999694824219" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
-        <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="20.0" layoutY="93.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
+        <Button fx:id="btnAddStudent" alignment="CENTER" depthTest="DISABLE" focusTraversable="false" layoutX="20.0" layoutY="93.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Student" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="101.0">
 
         </ImageView>
-        <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="148.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
+        <Button fx:id="btnAddQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="142.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Add Quiz" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="155.0">
 
         </ImageView>
-        <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
+        <Button fx:id="btnEditStudent" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="188.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Student" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
         </Button>
         <ImageView layoutX="26.0" layoutY="208.0">
 
         </ImageView>
-        <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="253.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
+        <Button fx:id="btnEditQuiz" alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="230.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Quiz" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="14.0" />
             </font>
             <padding>
                 <Insets left="10.0" />
@@ -58,7 +58,7 @@
         <Line endX="160.0" endY="311.20001220703125" startX="-3.051757857974735E-6" startY="311.20001220703125" style="-fx-stroke: #D8CCFB; -fx-stroke-width: 2;" />
         <Button fx:id="btnLogout" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="334.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="35.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Logout" textFill="#916cf5">
             <font>
-                <Font size="17.0" />
+                <Font size="16.0" />
             </font>
             <padding>
                 <Insets left="10.0" />
@@ -67,6 +67,14 @@
         <ImageView layoutX="26.0" layoutY="341.0">
             <Image url="@LogoutIcon.png" />
         </ImageView>
+        <Button fx:id="btnEditQuestion" alignment="CENTER" focusTraversable="false" layoutX="19.0" layoutY="269.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" pickOnBounds="false" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 6; -fx-background-color: #D8CCFB; -fx-font-weight: 700;" text="Edit Question" textFill="#916cf5">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+        </Button>
 
     </Pane>
     <ScrollPane hbarPolicy="ALWAYS" layoutX="160.0" prefHeight="84.0" prefWidth="438.0" stylesheets="@Style.css" vbarPolicy="NEVER">
@@ -81,24 +89,24 @@
     <Text layoutX="223.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
     <TextField fx:id="txtFieldStudentPassword" editable="false" layoutX="349.0" layoutY="284.0" promptText="********" />
     <Button fx:id="btnEditStudentFromList" layoutX="412.0" layoutY="346.0" mnemonicParsing="false" style="-fx-border-radius: 6; -fx-background-color: FFEEB6;" text="Edit Student" textFill="#916cf5">
-      <font>
-         <Font name="Comic Sans MS" size="16.0" />
-      </font></Button>
+        <font>
+            <Font name="Comic Sans MS" size="16.0" />
+        </font></Button>
     <Text layoutX="222.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
     <TextField fx:id="txtFieldStudentLastName" editable="false" layoutX="349.0" layoutY="200.0" promptText="Bazmol" />
-   <Button fx:id="btnDeleteStudent" layoutX="226.0" layoutY="346.0" mnemonicParsing="false" style="-fx-border-radius: 6; -fx-background-color: FFEEB6;" text="Delete Student" textFill="#916cf5">
-      <font>
-         <Font name="Comic Sans MS" size="16.0" />
-      </font></Button>
-   <CheckBox fx:id="firstNameCheckbox" layoutX="511.0" layoutY="162.0" mnemonicParsing="false" />
-   <CheckBox fx:id="lastNameCheckbox" layoutX="511.0" layoutY="204.0" mnemonicParsing="false" />
-   <CheckBox fx:id="emailCheckbox" layoutX="511.0" layoutY="242.0" mnemonicParsing="false" />
-   <CheckBox fx:id="passwordChechBox" layoutX="511.0" layoutY="288.0" mnemonicParsing="false" />
-   <Text fx:id="txtMessage" layoutX="232.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
-      <font>
-         <Font name="Comic Sans MS" size="16.0" />
-      </font>
-   </Text>
+    <Button fx:id="btnDeleteStudent" layoutX="226.0" layoutY="346.0" mnemonicParsing="false" style="-fx-border-radius: 6; -fx-background-color: FFEEB6;" text="Delete Student" textFill="#916cf5">
+        <font>
+            <Font name="Comic Sans MS" size="16.0" />
+        </font></Button>
+    <CheckBox fx:id="firstNameCheckbox" layoutX="511.0" layoutY="162.0" mnemonicParsing="false" />
+    <CheckBox fx:id="lastNameCheckbox" layoutX="511.0" layoutY="204.0" mnemonicParsing="false" />
+    <CheckBox fx:id="emailCheckbox" layoutX="511.0" layoutY="242.0" mnemonicParsing="false" />
+    <CheckBox fx:id="passwordCheckBox" layoutX="511.0" layoutY="288.0" mnemonicParsing="false" />
+    <Text fx:id="txtMessage" layoutX="232.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="300.0">
+        <font>
+            <Font name="Comic Sans MS" size="16.0" />
+        </font>
+    </Text>
 
 
 

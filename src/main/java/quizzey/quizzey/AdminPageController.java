@@ -2,11 +2,14 @@ package quizzey.quizzey;
 
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.scene.text.Text;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
@@ -30,26 +33,64 @@ public class AdminPageController {
     public Button btnAddStudentToList;
     public TextField txtFieldStudentLastName;
     public Text txtMessage;
+    public Button btnEditQuestion;
 
     public void initialize() throws IOException {
 
-            if (btnAddStudentToList != null)
-            {
-                setStudents();
-                btnAddStudentToList.setOnAction(event -> {
-                    try {
+        if (btnAddStudentToList != null) {
+            // set Focus when Enter key is pressed
+            txtFieldStudentID.setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    txtFieldStudentName.requestFocus();
+                }
+            });
 
-                        addStudentToList();
+            txtFieldStudentName.setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    txtFieldStudentLastName.requestFocus();
+                }
+            });
+
+            txtFieldStudentLastName.setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    txtFieldStudentEmail.requestFocus();
+                }
+            });
+
+            txtFieldStudentEmail.setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    txtFieldStudentPassword.requestFocus();
+                }
+            });
+
+            txtFieldStudentPassword.setOnKeyPressed(event -> {
+                if (event.getCode() == KeyCode.ENTER) {
+                    try {
+                        addStudentToList(); // Simulate button click
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                });
-            }
+                }
+            });
+
+            setStudents();
+            btnAddStudentToList.setOnAction(event -> {
+                try {
+
+                    addStudentToList();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        }
+
 
 
         btnAddStudent.setOnAction(event -> loadAndSetContent("AdminPageStyles/AdminPage.fxml"));
         btnEditStudent.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditStudent.fxml"));
         btnAddQuiz.setOnAction(event -> loadAndSetContent("AdminPageStyles/AdminAddQuiz.fxml"));
+        btnEditQuiz.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditQuiz.fxml"));
+        btnEditQuestion.setOnAction(event -> loadAndSetContent("AdminPageStyles/EditQuestion.fxml"));
         btnLogout.setOnAction(event -> logout());
     }
 
@@ -84,8 +125,7 @@ public class AdminPageController {
             Student student = new Student(txtFieldStudentID.getText(), txtFieldStudentName.getText(), txtFieldStudentLastName.getText(), txtFieldStudentEmail.getText(), txtFieldStudentPassword.getText(), User.Role.STUDENT);
             Student.studentsList.add(student);
             setStudent(student);
-            txtMessage.setText("Add Student Data Successfully");
-            txtMessage.setFill(Color.GREEN);
+            updateMessage("Add Student Data Successfully", Color.GREEN, txtMessage);
         }
 
 
@@ -126,34 +166,47 @@ public class AdminPageController {
     public boolean checkInput() {
 
         if (Student.getStudentByID(txtFieldStudentID.getText()) != null) {
-            txtMessage.setText("There is a student with this ID");
-            txtMessage.setFill(Color.RED);
+            updateMessage("There is a student with this ID", Color.RED, txtMessage);
             return false;
         }
 
-        if (txtFieldStudentID.getText().isEmpty()) {
-            txtMessage.setText("The ID can not be empty");
-            txtMessage.setFill(Color.RED);
+        if (isEmpty(txtFieldStudentID)) {
+            updateMessage("The ID can not be empty", Color.RED, txtMessage);
             return false;
         }
 
-        if (txtFieldStudentName.getText().isEmpty() || txtFieldStudentLastName.getText().isEmpty()) {
-            txtMessage.setText("The name can not be empty");
-            txtMessage.setFill(Color.RED);
+        if (isEmpty(txtFieldStudentName) || isEmpty(txtFieldStudentLastName)) {
+            updateMessage("The name can not be empty", Color.RED, txtMessage);
             return false;
         }
 
         if (!Student.isValidEmail(txtFieldStudentEmail.getText())) {
-            txtMessage.setText("Invalid Email");
-            txtMessage.setFill(Color.RED);
+            updateMessage("Invalid Email", Color.RED, txtMessage);
             return false;
         }
         if (!Student.isValidPassword(txtFieldStudentPassword.getText())) {
-            txtMessage.setText("Invalid Password");
-            txtMessage.setFill(Color.RED);
+            updateMessage("Invalid password", Color.RED, txtMessage);
             return false;
         }
 
         return true;
+    }
+
+    public boolean isEmpty(TextField textField) {
+        return textField.getText().trim().isEmpty();
+    }
+
+    public void updateMessage(String message, Paint color, Text msgToEdit ) {
+        msgToEdit.setText(message);
+        msgToEdit.setFill(color);
+        msgToEdit.setStyle("-fx-font-weight: bold");
+    }
+
+    public void showAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Successful Process");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }

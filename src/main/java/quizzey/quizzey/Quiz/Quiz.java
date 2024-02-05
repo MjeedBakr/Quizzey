@@ -17,7 +17,7 @@ public class Quiz {
         this.quizID = quizID;
         this.quizName = quizName;
         this.quizTimer = quizTimer;
-        this.quizEntryCode = quizEntryCode;
+        this.quizEntryCode = quizEntryCode.toUpperCase();
         this.numberOfQuestions = numberOfQuestions;
         this.questions = questions;
     }
@@ -57,7 +57,7 @@ public class Quiz {
     }
 
     public void setQuizEntryCode(String quizEntryCode) {
-        this.quizEntryCode = quizEntryCode;
+        this.quizEntryCode = quizEntryCode.toUpperCase();
     }
 
     public short getNumberOfQuestions() {

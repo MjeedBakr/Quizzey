@@ -3,11 +3,17 @@ package quizzey.quizzey;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
+import quizzey.quizzey.Quiz.Question;
+import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 import quizzey.quizzey.Users.Admin;
 import quizzey.quizzey.Users.Student;
 import quizzey.quizzey.Users.User;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class LoginPageController {
 
@@ -33,6 +39,69 @@ public class LoginPageController {
         Student.studentsList.add(stu2);
         Admin.adminsList.add(adm1);
 
+        //Q1
+        HashMap<String, Boolean> question1Hash = new HashMap<>();
+        Question question1 = new Question();
+        question1Hash.put("Java", true);
+        question1Hash.put("C++", false);
+        question1Hash.put("Python", false);
+        question1Hash.put("Kotlin", false);
+        question1.setQuestionID("Q1");
+        question1.setTheQuestion("What is the best programming language");
+        question1.setChoices(question1Hash);
+        //Q2
+        HashMap<String, Boolean> question2Hash = new HashMap<>();
+        Question question2 = new Question();
+        question2Hash.put("HTML", false);
+        question2Hash.put("CSS", true);
+        question2Hash.put("JavaScript", false);
+        question2Hash.put("PHP", false);
+        question2.setQuestionID("Q2");
+        question2.setTheQuestion("Which language is used for styling web pages?");
+        question2.setChoices(question2Hash);
+        //Q3
+        HashMap<String, Boolean> question3Hash = new HashMap<>();
+        Question question3 = new Question();
+        question3Hash.put("SQL", false);
+        question3Hash.put("NoSQL", true);
+        question3Hash.put("MongoDB", false);
+        question3Hash.put("Firebase", false);
+        question3.setQuestionID("Q3");
+        question3.setTheQuestion("Which type of database is used for unstructured data?");
+        question3.setChoices(question3Hash);
+        //Q4
+        HashMap<String, Boolean> question4Hash = new HashMap<>();
+        Question question4 = new Question();
+        question4Hash.put("Linux", true);
+        question4Hash.put("Windows", false);
+        question4Hash.put("MacOS", false);
+        question4Hash.put("Android", false);
+        question4.setQuestionID("Q4");
+        question4.setTheQuestion("Which operating system is open source?");
+        question4.setChoices(question4Hash);
+        //Q5
+        HashMap<String, Boolean> question5Hash = new HashMap<>();
+        Question question5 = new Question();
+        question5Hash.put("Machine Learning", true);
+        question5Hash.put("Blockchain", false);
+        question5Hash.put("IoT", false);
+        question5Hash.put("Virtual Reality", false);
+        question5.setQuestionID("Q5");
+        question5.setTheQuestion("Which technology is used for making computers learn without being explicitly programmed?");
+        question5.setChoices(question5Hash);
+
+        ArrayList<Question> questionsList1 = new ArrayList<>();
+        questionsList1.add(question1);
+        questionsList1.add(question2);
+        questionsList1.add(question3);
+        questionsList1.add(question4);
+        questionsList1.add(question5);
+
+        Quiz quiz1 = new Quiz(QuizManager.generateQuizID(), "Advanced Coding", (short) 30, "spl3mf", (short) 5, questionsList1);
+        QuizManager.quizzesList.add(quiz1);
+
+
+
         QuizManager.displayQuizzes();
     }
 
@@ -54,6 +123,20 @@ public class LoginPageController {
                 // Update label or perform other actions based on the selected role
                 labelSelector.setText("Selected Role: " + newValue);
                 selectedRule = newValue;
+            }
+        });
+
+        // focus on password field when press enter key in email field
+        txtFieldEmail.setOnKeyPressed(keyEvent -> {
+            if (keyEvent.getCode() == KeyCode.ENTER) {
+                txtFieldPassword.requestFocus();
+            }
+        });
+
+        //Login when press enter
+        txtFieldPassword.setOnKeyPressed(keyEvent -> {
+            if (keyEvent.getCode() == KeyCode.ENTER) {
+                handleLoginButtonAction();
             }
         });
 

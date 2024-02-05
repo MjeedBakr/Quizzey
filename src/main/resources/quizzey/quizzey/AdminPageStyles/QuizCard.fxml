@@ -5,11 +5,10 @@
 <?import javafx.scene.text.Text?>
 
 
-<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+<HBox  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="quizzey.quizzey.AdminQuizCardController">
-   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="74"
-               prefWidth="200.0">
-      <Text fx:id="txtQuizName" layoutX="10.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QuizName"/>
-      <Text fx:id="txtQuizID" layoutX="12.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QuizID"/>
+   <AnchorPane prefHeight="82.0" prefWidth="211.0" style="-fx-border-style: hidden solid none none; -fx-border-color: #916CF5; -fx-border-width: 2;">
+      <Text fx:id="txtQuizName" layoutX="1.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name" wrappingWidth="76.412109375"/>
+      <Text fx:id="txtQuizID" layoutX="3.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID"/>
    </AnchorPane>
 </HBox>

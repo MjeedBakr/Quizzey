@@ -1,4 +1,4 @@
-package quizzey.quizzey.Quiz;
+package quizzey.quizzey.QuizPlay;
 
 public class QuizSceneController {
 }

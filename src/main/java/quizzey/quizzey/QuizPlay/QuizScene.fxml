@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D8CCFB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.Quiz.QuizSceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D8CCFB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.QuizPlay.QuizSceneController">
     <children>
         <Text fx:id="questionID" fill="#916cf5" layoutX="46.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question No.">
             <font>
@@ -20,7 +20,7 @@
             </font>
         </Text>
         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="462.0" layoutY="22.0">
-            <Image url="@Idea.png"/>
+            <Image url="@../Quiz/Idea.png"/>
         </ImageView>
         <Text fx:id="question" fill="#916cf5" layoutX="99.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question blah blah blah blah blah ?" textAlignment="CENTER" wrappingWidth="402.392578125">
             <font>

@@ -10,5 +10,6 @@ module quizzey.quizzey {
 
     exports quizzey.quizzey.Users;
 exports quizzey.quizzey.Quiz;
+    exports quizzey.quizzey.QuizPlay;
 
 }

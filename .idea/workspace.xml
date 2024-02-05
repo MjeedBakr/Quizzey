@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="5:00 PM">
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditQuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/ResultSceneController.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/StartQuizSceneController.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/ShowQuestionsCardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuestion.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/ShowQuestionsCard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AddQuestionsCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AddQuestionsCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminAddQuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/AdminPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditStudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/EditStudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Quiz/QuizSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/QuizPlay/QuizSceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/Users/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/StudentCard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Thursday 4:15 PM By Abdulmajeed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -165,7 +135,7 @@
       <workItem from="1707059340456" duration="603000" />
       <workItem from="1707104678834" duration="7702000" />
       <workItem from="1707114372660" duration="9905000" />
-      <workItem from="1707127793972" duration="10622000" />
+      <workItem from="1707127793972" duration="10928000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -215,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707055162720</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Thursday 4:15 PM By Abdulmajeed">
+      <option name="closed" value="true" />
+      <created>1707138967134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707138967134</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +216,7 @@
     <MESSAGE value="Home And Profile Pages done" />
     <MESSAGE value="Start Working on Admin Pages" />
     <MESSAGE value="5:00 PM" />
-    <option name="LAST_COMMIT_MESSAGE" value="5:00 PM" />
+    <MESSAGE value="Thursday 4:15 PM By Abdulmajeed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thursday 4:15 PM By Abdulmajeed" />
   </component>
 </project>

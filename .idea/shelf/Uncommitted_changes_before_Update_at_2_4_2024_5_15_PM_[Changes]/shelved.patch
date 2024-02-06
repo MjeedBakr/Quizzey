@@ -1,0 +1,42 @@
+Index: src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css b/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css
+new file mode 100644
+--- /dev/null	(date 1707051457033)
++++ b/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css	(date 1707051457033)
+@@ -0,0 +1,31 @@
++.scroll-bar:horizontal {
++    -fx-background-color: transparent;
++    -fx-border-color:transparent;
++    -fx-scale-y:0.5 ;
++}
++.scroll-pane{
++    -fx-background: #D8CCFB;
++
++    -fx-border-color:transparent;
++}
++.track {
++    -fx-background-color: transparent;
++    -fx-border-color:#D8CCFB;
++
++}
++.scroll-bar:horizontal .thumb {
++    -fx-background-color: #916CF5;
++
++}
++.Button{
++    -fx-background-color: #000000;
++}
++.scroll-bar:horizontal {
++    -fx-background-color: transparent;
++    -fx-border-color:transparent;
++}
++.scroll-bar:horizontal .increment-button,
++.scroll-bar:horizontal .decrement-button {
++    -fx-background-color: transparent;
++    -fx-border-color: transparent;
++}
+\ No newline at end of file

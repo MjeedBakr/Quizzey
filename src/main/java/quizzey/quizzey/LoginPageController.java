@@ -5,13 +5,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
+import javafx.util.converter.IntegerStringConverter;
 import quizzey.quizzey.Quiz.Question;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 import quizzey.quizzey.Users.Admin;
 import quizzey.quizzey.Users.Student;
 import quizzey.quizzey.Users.User;
-
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -32,11 +35,11 @@ public class LoginPageController {
 
 
     public void setRandomData() {
-        Student stu1 = new Student("1", "Ali", "Ahmad", "Ali@Ali.com", "12345678", User.Role.STUDENT);
-        Student stu2 = new Student("2", "Mohammed", "Ahmad", "mohammed@Ali.com", "12345678", User.Role.STUDENT);
+//        Student stu1 = new Student("1", "Ali", "Ahmad", "Ali@Ali.com", "12345678", User.Role.STUDENT);
+//        Student stu2 = new Student("2", "Mohammed", "Ahmad", "mohammed@Ali.com", "12345678", User.Role.STUDENT);
         Admin adm1 = new Admin("2", "Mohammed", "Admin", "Admin@Admin.com", "admin123", User.Role.ADMIN);
-        Student.studentsList.add(stu1);
-        Student.studentsList.add(stu2);
+//        Student.studentsList.add(stu1);
+//        Student.studentsList.add(stu2);
         Admin.adminsList.add(adm1);
 
         //Q1
@@ -174,6 +177,10 @@ public class LoginPageController {
     }
 
     private boolean performLogin(User.Role role, String email, String password) {
+        // login logic here with database and regular expressions and return true if successful, false otherwise
+//        Student test = dbLogin();
+        System.out.println("enter perform login");
+
 
         switch (role) {
             case ADMIN -> {
@@ -187,7 +194,7 @@ public class LoginPageController {
                 return false;
             }
             case STUDENT -> {
-                loggedInStudent = Student.getStudentByEmailAndPassword(email, password);
+                loggedInStudent = dbLogin();
                 // Authenticate student
                 // Add student authentication logic here
 
@@ -203,6 +210,54 @@ public class LoginPageController {
         return false;
     }
 
+
+
+
+    public Student dbLogin(){
+        System.out.println("Enter Login");
+        DataBase dbc = new DataBase();
+        Connection connectdb = dbc.getConnection();
+        String email = txtFieldEmail.getText();
+        String password = txtFieldPassword.getText();
+        int id;
+        String name;
+        Student stu = null;
+
+        String valid = "select count(1) From students where email ='" +email+ "' AND password ='"+ password+ "'";
+        // "select count(1) From students where email = ' "+  email  +"' AND password = ' "+ password +"' ;";
+        String selected = "select student_id,name,email,password from students where email = '"+email+"' AND password ='"+password+"'";
+
+        try {
+            Statement statement = connectdb.createStatement();
+            ResultSet queryResult = statement.executeQuery(valid);
+
+            while(queryResult.next()){
+                if(queryResult.getInt(1)==1){
+                    ResultSet selectQuery =statement.executeQuery(selected);
+                    while(selectQuery.next()) {
+
+                        id = selectQuery.getInt(1);
+                        name = selectQuery.getString(2);
+                        email = selectQuery.getString(3);
+                        password = selectQuery.getString(4);
+                        stu = new Student(Integer.toString(id),name,name,email,password);
+                    }
+                    System.out.println(stu.getPersonID()+ " " + stu.getFirstName()+ " " + stu.getEmail()+ " " + stu.getPassword());
+                    System.out.println("Logged in");
+                    return stu;
+                }
+                else{
+                    System.out.println("not logged in");
+                    return stu;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
+    }
     private void openAdminPage(Admin loggedInAdmin) {
         try {
             // Load the FXML file for the Admin page

@@ -29,3 +29,23 @@
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 }
+.button{
+    -fx-border-radius:6;
+    -fx-background-color: #FFEEB6;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size:  16;
+    -fx-text-fill: #916CF5;
+}
+#addQuestionsCard{
+    -fx-border-color: #916CF5;
+    -fx-background-color: #D8CCFB ;
+}
+.text-field {
+    -fx-background-color:  #FFEEB6;
+}
+.check-box-table-cell {
+    -fx-background-color:  #D8CCFB;
+}
+.box {
+    -fx-background-color:  #FFEEB6;
+}

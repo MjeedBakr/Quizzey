@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Thursday 4:15 PM By Abdulmajeed" />
+    <list default="true" id="6be9da4c-2551-4198-bf78-d8be4d9081c7" name="Changes" comment="Thursday 4:15 PM By Abdulmajeed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AddQuestionsCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminAddQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/AdminPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuestion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuestion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditQuiz.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/EditStudent.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/QuizCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/quizzey/quizzey/AdminPageStyles/Style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,29 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.AppStart.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmkd-/Desktop/Quizzey/src/main/resources/quizzey/quizzey/AdminPageStyles&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AppStart.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/FMB/Desktop/Quizzey/src/main/java/quizzey/quizzey",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FMB\Desktop\Quizzey\src\main\java\quizzey\quizzey" />
       <recent name="C:\Users\jmkd-\Desktop\Quizzey\src\main\resources\quizzey\quizzey\AdminPageStyles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -218,5 +232,25 @@
     <MESSAGE value="5:00 PM" />
     <MESSAGE value="Thursday 4:15 PM By Abdulmajeed" />
     <option name="LAST_COMMIT_MESSAGE" value="Thursday 4:15 PM By Abdulmajeed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java</url>
+          <line>184</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/quizzey/quizzey/LoginPageController.java</url>
+          <line>215</line>
+          <properties class="quizzey.quizzey.LoginPageController" method="dbLogin">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

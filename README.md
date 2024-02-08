@@ -18,8 +18,9 @@ Quiz Game using ->{ Java, JavaFX, CSS, MySQL, FXML}
 
 ## Screenshots
 
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20082959.png)
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20083034.png)
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20083100.png)
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20083121.png)
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20083207.png)
+![App Screenshot](https://github.com/MjeedBakr/Quizzey/blob/master/Screenshots/Screenshot%202024-02-08%20083322.png)

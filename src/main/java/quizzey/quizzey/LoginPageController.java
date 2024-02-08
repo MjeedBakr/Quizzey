@@ -11,7 +11,11 @@ import quizzey.quizzey.Quiz.QuizManager;
 import quizzey.quizzey.Users.Admin;
 import quizzey.quizzey.Users.Student;
 import quizzey.quizzey.Users.User;
+import quizzey.quizzey.Users.User.Role;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -104,7 +108,7 @@ public class LoginPageController {
 
 
 
-        QuizManager.displayQuizzes();
+        // QuizManager.displayQuizzes();
     }
 
 
@@ -193,7 +197,7 @@ public class LoginPageController {
                 return false;
             }
             case STUDENT -> {
-                loggedInStudent = Student.getStudentByEmailAndPassword(email, password);
+                loggedInStudent = dbLogin();
                 // Authenticate student
                 // Add student authentication logic here
 
@@ -207,6 +211,53 @@ public class LoginPageController {
         }
 
         return false;
+    }
+
+    public Student dbLogin(){
+        System.out.println("Enter Login");
+        DataBase dbc = new DataBase();
+        Connection connectdb = dbc.getConnection();
+        String email = txtFieldEmail.getText();
+        String password = txtFieldPassword.getText();
+        int id;
+        String name , l_name;
+        Student stu = null;
+
+        String valid = "select count(1) From students where email ='" +email+ "' AND password ='"+ password+ "'";
+        // "select count(1) From students where email = ' "+  email  +"' AND password = ' "+ password +"' ;";
+        String selected = "select student_id,name,l_name,email,password from students where email = '"+email+"' AND password ='"+password+"'";
+
+        try {
+            Statement statement = connectdb.createStatement();
+            ResultSet queryResult = statement.executeQuery(valid);
+
+            while(queryResult.next()){
+                if(queryResult.getInt(1)==1){
+                    ResultSet selectQuery =statement.executeQuery(selected);
+                    while(selectQuery.next()) {
+
+                        id = selectQuery.getInt(1);
+                        name = selectQuery.getString(2);
+                        l_name = selectQuery.getString(3);
+                        email = selectQuery.getString(4);
+                        password = selectQuery.getString(5);
+                        stu = new Student(Integer.toString(id),name,l_name,email,password,Role.STUDENT);
+                    }
+                    System.out.println(stu.getPersonID()+ " " + stu.getFirstName()+ " " + stu.getEmail()+ " " + stu.getPassword());
+                    System.out.println("Logged in");
+                    return stu;
+                }
+                else{
+                    System.out.println("not logged in");
+                    return stu;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
     }
 
     private void openAdminPage(Admin loggedInAdmin) {

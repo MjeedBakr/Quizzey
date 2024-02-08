@@ -10,9 +10,9 @@ Quiz Game using ->{ Java, JavaFX, CSS, MySQL, FXML}
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-|  Color | ![#D8CCFB](https://via.placeholder.com/10/0a192f?text=+) #D8CCFB |
-|  Color | ![#916CF5](https://via.placeholder.com/10/f8f8f8?text=+) #916CF5 |
-|  Color | ![#FFEEB6](https://via.placeholder.com/10/00b48a?text=+) #FFEEB6 |
+|  Color | ![#D8CCFB](https://via.placeholder.com/10/D8CCFB?text=+) #D8CCFB |
+|  Color | ![#916CF5](https://via.placeholder.com/10/916CF5?text=+) #916CF5 |
+|  Color | ![#FFEEB6](https://via.placeholder.com/10/FFEEB6?text=+) #FFEEB6 |
 
 
 

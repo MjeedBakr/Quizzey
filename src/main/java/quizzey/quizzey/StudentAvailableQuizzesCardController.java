@@ -38,6 +38,8 @@ public class StudentAvailableQuizzesCardController extends StudentPageController
         if (!checkInput())
             return;
 
+        
+
         quiz = QuizManager.getQuizByCode(txtFieldCode.getText().toUpperCase());
         // Disable the current stage
         Stage currentStage = (Stage) btnEnter.getScene().getWindow();

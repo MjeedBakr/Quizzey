@@ -7,10 +7,9 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-
 <HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizzey.quizzey.GradesCardController">
    <children>
-      <AnchorPane prefHeight="94.0" prefWidth="442.0" style="-fx-background-color: FFEEB6;">
+      <AnchorPane prefHeight="94.0" prefWidth="442.0" style="-fx-background-color: FFEEB6; -fx-border-color: #D8CCFB; -fx-border-radius: bottom; -fx-border-width: 5;">
          <TextFlow layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="327.0">
             <padding>
                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

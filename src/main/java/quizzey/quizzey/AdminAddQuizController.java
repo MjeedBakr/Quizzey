@@ -28,7 +28,7 @@ public class AdminAddQuizController extends AdminPageController{
     public Button btnAddQuestions;
 
     public Quiz quiz = new Quiz();
-    public static ArrayList<Question> questionsList = new ArrayList<Question>();
+    public ArrayList<Question> questionsList = new ArrayList<Question>();
     public Text txtMessageAddQuiz;
 
     public void initialize() throws IOException {
@@ -139,7 +139,6 @@ public class AdminAddQuizController extends AdminPageController{
 
         quiz.setQuestions(questionsList);
         QuizManager.quizzesList.add(quiz);
-        questionsList.clear();
         loadAndSetContent("AdminPageStyles/AdminAddQuiz.fxml");
 
     }

@@ -30,6 +30,8 @@ public class StartQuizController {
 
     public void playQuiz(MouseEvent event) {
 
+        
+
         Stage stage = new Stage();
 
         try {

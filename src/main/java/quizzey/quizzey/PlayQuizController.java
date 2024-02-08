@@ -137,7 +137,7 @@ public class PlayQuizController {
             txtNextQuestion.setText("Next Question in " + countDownSeconds.get() + "...");
             if (countDownSeconds.get() == 0) {
                 currentQuestionIndex++;
-                if (currentQuestionIndex < attemptingQuiz.getNumberOfQuestions()) {
+                if (currentQuestionIndex < attemptingQuiz.getQuestions().size()) {
                     resumeMainTimer();
                     displayCurrentQuestion();
                 } else {

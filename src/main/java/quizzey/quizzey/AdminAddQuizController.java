@@ -16,10 +16,13 @@ import quizzey.quizzey.Quiz.Question;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class AdminAddQuizController extends AdminPageController{
+public class AdminAddQuizController extends AdminPageController implements Serializable{
     public HBox quizCardContainer;
     public TextField txtFieldQuizName;
     public TextField txtFieldQuizTimer;
@@ -135,6 +138,26 @@ public class AdminAddQuizController extends AdminPageController{
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+
+        try {
+            // Create a file output stream
+            FileOutputStream fileOut = new FileOutputStream("quiz.ser");
+
+            // Create an object output stream
+            ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+
+            // Write the Quiz object to the file
+            objectOut.writeObject(quiz);
+
+            // Close the streams
+            objectOut.close();
+            fileOut.close();
+
+            System.out.println("Quiz object has been serialized and saved to quiz.ser");
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         quiz.setQuestions(questionsList);

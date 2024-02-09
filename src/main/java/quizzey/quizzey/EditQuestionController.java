@@ -11,11 +11,14 @@ import quizzey.quizzey.Quiz.Question;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EditQuestionController extends AdminAddQuizController{
+public class EditQuestionController extends AdminAddQuizController implements Serializable{
     public TextField txtFldQuizID;
     public Button btnShowQuestions;
     public TextField txtfldQuestionID;
@@ -43,7 +46,27 @@ public class EditQuestionController extends AdminAddQuizController{
         btnUpdateValue.setOnAction(event -> updateValue());
         btnShowQuestions.setOnAction(event -> showQuestions());
 
+        loadQuizFromFile();
 
+    }
+
+    private void loadQuizFromFile() {
+        try {
+            // Read the quiz object from file
+            FileInputStream fileIn = new FileInputStream("quiz.ser");
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+            Quiz loadedQuiz = (Quiz) objectIn.readObject();
+
+            // Display the loaded quiz data in the UI
+            txtFldQuizID.setText(loadedQuiz.getQuizID());
+
+            // Close the streams
+            objectIn.close();
+            fileIn.close();
+
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void updateValue() {

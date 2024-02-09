@@ -1,5 +1,7 @@
 package quizzey.quizzey;
 
+import java.io.*;
+import java.util.ArrayList; // Import ArrayList class
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -11,9 +13,7 @@ import javafx.scene.text.Text;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 
-import java.io.IOException;
-
-public class StudentQuizzesController extends StudentPageController{
+public class StudentQuizzesController extends StudentPageController implements Serializable {
 
     @FXML
     public VBox cardContainer;
@@ -21,12 +21,37 @@ public class StudentQuizzesController extends StudentPageController{
     @Override
     public void initialize() throws IOException {
         super.initialize();
+        setQuizzes();
 
         if (loggedInStudent != null) {
-            setQuizzes();
+            // Load quizzes from file
+            loadQuizzesFromFile();
         }
     }
 
+    private void loadQuizzesFromFile() {
+        try {
+            // Read the quiz objects from file
+            FileInputStream fileIn = new FileInputStream("quiz.ser");
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+
+            // Use proper generics to cast the object
+            ArrayList<Quiz> loadedQuizzes = (ArrayList<Quiz>) objectIn.readObject();
+
+            // Set the loaded quizzes to the QuizManager
+            QuizManager.quizzesList = loadedQuizzes;
+
+            // Close the streams
+            objectIn.close();
+            fileIn.close();
+
+            // Populate UI with loaded quiz data
+            setQuizzes();
+
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void setQuizzes() throws IOException {
         for (Quiz quiz : QuizManager.quizzesList) {

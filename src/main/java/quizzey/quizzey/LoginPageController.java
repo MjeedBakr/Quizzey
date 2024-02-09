@@ -103,7 +103,7 @@ public class LoginPageController {
         questionsList1.add(question4);
         questionsList1.add(question5);
 
-        Quiz quiz1 = new Quiz(QuizManager.generateQuizID(), "Advanced Coding", (short) 2, "spl3mf", (short) 5, questionsList1);
+        Quiz quiz1 = new Quiz(QuizManager.generateQuizID(), "Advanced Coding", (short) 2, "SPL3MF", (short) 5, questionsList1);
         QuizManager.quizzesList.add(quiz1);
 
 
@@ -197,7 +197,8 @@ public class LoginPageController {
                 return false;
             }
             case STUDENT -> {
-                loggedInStudent = dbLogin();
+                loggedInStudent = Student.getStudentByEmailAndPassword(email, password);
+                //loggedInStudent = dbLogin();
                 // Authenticate student
                 // Add student authentication logic here
 

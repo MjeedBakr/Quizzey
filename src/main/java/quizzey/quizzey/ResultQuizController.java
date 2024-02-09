@@ -4,11 +4,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Users.Student;
 
+import java.io.File;
 import java.io.IOException;
 
 public class ResultQuizController {
@@ -30,6 +33,11 @@ public class ResultQuizController {
     public static double grade;
 
     public void initialize() {
+        if (correctAnswersCount > wrongAnswersCount)
+            playWin();
+        else
+            playLose();
+
         grade = getGrade();
 
         txtStudentName.setText(student.getFirstName() + " " + student.getLastName());
@@ -46,6 +54,18 @@ public class ResultQuizController {
             backToHomePage();
         });
 
+    }
+
+    public void playWin() {
+        MediaPlayer mediaPlayer = new MediaPlayer(new Media(getClass().getResource("win.mp3").toExternalForm()));
+
+        mediaPlayer.play();
+    }
+
+    public void playLose() {
+        MediaPlayer mediaPlayer = new MediaPlayer(new Media(getClass().getResource("lose.mp3").toExternalForm()));
+
+        mediaPlayer.play();
     }
 
     private String calculateTime(int seconds) {

@@ -15,11 +15,13 @@ import quizzey.quizzey.Quiz.Question;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Users.Student;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 public class PlayQuizController {
 
     @FXML
@@ -44,13 +46,22 @@ public class PlayQuizController {
     public Text txtQuestion;
     public Text txtMessage;
     private Timeline mainTimer;
+    public static MediaPlayer mediaPlayer;
 
 
     public void initialize() {
+        playAudio();
         mainTimer = createMainTimer();
         mainTimer.play();
         displayCurrentQuestion();
 
+    }
+
+    public void playAudio() {
+        Media media = new Media(getClass().getResource("play.mp3").toExternalForm());
+        mediaPlayer = new MediaPlayer(media);
+        
+        mediaPlayer.play();
     }
 
     private Timeline createMainTimer() {
@@ -170,6 +181,7 @@ public class PlayQuizController {
     }
 
     private void finishQuiz() {
+        mediaPlayer.stop();
         try {
             ResultQuizController.totalQuestions = (attemptingQuiz.getNumberOfQuestions());
             ResultQuizController.correctAnswersCount = (correctAnswers);

@@ -1,4 +1,5 @@
 module quizzey.quizzey {
+    requires javafx.media;
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;

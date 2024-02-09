@@ -8,9 +8,12 @@ import javafx.scene.text.Text;
 import quizzey.quizzey.Quiz.Quiz;
 import quizzey.quizzey.Quiz.QuizManager;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
 
-public class EditQuizController extends AdminAddQuizController{
+public class EditQuizController extends AdminAddQuizController implements Serializable{
     public TextField txtFieldEditQuizName;
     public TextField txtFieldEditQuizTimer;
     public TextField txtFieldQuizID;
@@ -31,6 +34,29 @@ public class EditQuizController extends AdminAddQuizController{
 
         btnEditQuizInfo.setOnAction(event -> editQuiz());
         btnDeleteQuiz.setOnAction(event -> deleteQuiz());
+
+        loadQuizFromFile();
+    }
+
+    private void loadQuizFromFile() {
+        try {
+            // Read the quiz object from file
+            FileInputStream fileIn = new FileInputStream("quiz.ser");
+            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+            Quiz loadedQuiz = (Quiz) objectIn.readObject();
+
+            // Display the loaded quiz data in the UI
+            txtFieldEditQuizName.setText(loadedQuiz.getQuizName());
+            txtFieldEditQuizTimer.setText(String.valueOf(loadedQuiz.getQuizTimer()));
+            txtFieldEditNumberOfQuestions.setText(String.valueOf(loadedQuiz.getNumberOfQuestions()));
+
+            // Close the streams
+            objectIn.close();
+            fileIn.close();
+
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void editQuiz (){
